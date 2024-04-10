@@ -1,1 +1,27 @@
-<h1>Welcome!</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Dashboard</title>
+</head>
+<body>
+    <h1>User Dashboard</h1>
+    <ul id="userData"></ul>
+
+    <script>
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "users.json", true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                var users = JSON.parse(xhr.responseText);
+                var userDataElement = document.getElementById("userData");
+                users.forEach(function(user) {
+                    var li = document.createElement("li");
+                    li.textContent = "Username: " + user.username + ", Password: " + user.password;
+                    userDataElement.appendChild(li);
+                });
+            }
+        };
+        xhr.send();
+    </script>
+</body>
+</html>
