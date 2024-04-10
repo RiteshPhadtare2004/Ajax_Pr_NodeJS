@@ -1,2 +1,3 @@
-# js-ajax-form-submission
-A tutorial on using AJAX to submit HTML forms. Video Link: &lt;coming soon>
+# AJAX User Registration Form
+Write a JavaScript Program to get the user registration data and push to array/local storage with AJAX 
+POST method and data list in new page. 
