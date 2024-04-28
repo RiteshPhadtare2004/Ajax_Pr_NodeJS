@@ -1,0 +1,17 @@
+{
+  "name": "ajax_form_submission",
+  "version": "1.0.0",
+  "description": "Write a JavaScript Program to get the user registration data and push to array/local storage with AJAX \r POST method and data list in new page.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security"
+  }
+}
