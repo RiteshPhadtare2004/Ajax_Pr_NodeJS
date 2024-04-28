@@ -1,3 +1,5 @@
-# AJAX User Registration Form
-Write a JavaScript Program to get the user registration data and push to array/local storage with AJAX 
-POST method and data list in new page. 
+
+To run :
+npm i
+
+node node.js
